@@ -1,0 +1,44 @@
+body {
+    background: rgb(41, 39, 39);
+}
+
+.title {
+    width: 1000px;
+    display: block;
+    margin: 300px 300px;
+}
+
+.title__content {
+    color: rgba(130, 152, 128, 0.63);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
+    position: relative;
+}
+
+.title__content::before {
+    content: "";
+    width: 130px;
+    height: 35px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(17,17,99,1) 50%, rgba(17,14,204,1) 100%);
+    border-radius: 30px;
+    border: 1px solid rgb(242, 236, 236);
+    position: absolute;
+    top: 45%;
+    left: 845px;
+}
+
+.title__content::after {
+    content: "";
+    width: 130px;
+    height: 35px;
+    background: rgb(36,0,0);
+    background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(99,17,20,1) 50%, rgba(204,14,14,1) 100%);
+    border-radius: 30px;
+    border: 1px solid rgb(242, 236, 236);
+    position: absolute;
+    top: 45%;
+    left: -150px;
+}
